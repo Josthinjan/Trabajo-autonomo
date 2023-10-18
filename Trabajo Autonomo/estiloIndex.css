@@ -1,0 +1,95 @@
+/*paleta de colores y general*/
+:root {
+    --rojouleam: rgb(227, 6, 20);
+    --verdeuleam: rgb(149, 193, 31);
+    --grisuleam: rgb(243, 243, 243);
+    --oscuro: rgb(22, 28, 39);
+
+}
+
+body {
+    font-family: 'comic neue', sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+/*Todo para el header y footer*/
+header,
+footer {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    background-color: var(--grisuleam);
+}
+
+footer {
+    font-size: 10px;
+    background-color: var(--oscuro);
+    color: var(--grisuleam);
+}
+
+.logo {
+    width: 100px;
+    margin-left: 20px;
+}
+
+footer p {
+    margin-left: 20px;
+}
+
+button {
+    font-family: 'comic neue', sans-serif;
+    background-color: var(--verdeuleam);
+    border: none;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 40px;
+    margin-top: 25px;
+}
+
+button:hover {
+    transition: 0.5s;
+    background-color: var(--rojouleam);
+    color: var(--grisuleam);
+}
+
+
+/*Main*/
+main {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.imagen {
+    position: relative;
+    width: 500px;
+    margin-top: 10px;
+}
+
+.indeximg {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.textoindex {
+    margin-top: 70px;
+    margin-left: 50px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+li {
+    list-style: none;
+
+}
+
+h1 {
+    font-size: 40px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generar Oferta</title>
+    <link rel="stylesheet" type="text/css" href="estiloempleo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Comic+Neue:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+    <script src="scriptimagen.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="principal.html"><img src="../imagenes/logouleam.png" alt="Logo"></a>
+        </div>
+    </header>
+    <main>
+        <div class="cuerpo">
+            <h1 class="titulo">
+                Generar oferta de empleo
+            </h1>
+            <div class="formulario">
+                <label for="nombre" class="texto-nombre">Nombre del Empleo</label><br>
+                <input type="text" class="nombre"><br>
+                <label for="tipo" class="texto-tipo">Modalidad de Empleo</label><br>
+                <select name="tipo" id="tipo">
+                    <option value="1">Seleccione</option>
+                    <option value="2">Presencial</option>
+                    <option value="3">Virtual</option>
+                    <option value="4">Hibrida</option>
+                </select>
+                <section class="division" readonly>
+                    <section class="izquierda">
+                        <label for="descripcion">Descripción</label><br>
+                        <textarea class="descripcion" rows="4">
+
+
+                </textarea>
+
+                        <button type="submit" id="registrarse">Generar Oferta</button>
+                    </section>
+                    <section class="derecha">
+                        <div id="contenedor" ondragover="manejarArrastre(event)" ondrop="soltarImagen(event)"
+                            onclick="cargarImagenPorClic()">
+                            <span id="texto">Arrastra una imagen aquí o haz clic para seleccionar</span>
+                            <input type="file" id="inputImagen" accept="image/*" style="display: none;">
+                            <img id="imagen" src="" alt="Imagen">
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright Josthin Baque 2023</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" type="text/css" href="estiloperfil.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Comic+Neue:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+    <script src="scriptimagen.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="principal.html"><img src="../imagenes/logouleam.png" alt="Logo"></a>
+        </div>
+    </header>
+    <main>
+        <div class="cuerpo-registro">
+            <form action="" class="registrof" id="registrof">
+                <h2>Perfil</h2>
+                <div class="texto">
+                    <div class="izquierda">
+                        <input type="text" name="nombre_registro" id="nombre" placeholder="Nombre Completo">
+                        <input type="text" name="cedula_registro" id="cedula" placeholder="Número de Cédula">
+                        <input type="email" name="correo_registro" id="correo" placeholder="Correo Electrónico">
+                        <input type="text" name="telefono_registro" id="telefono" placeholder="Número de Teléfono">
+                        <input type="number" name="edad_registro" id="edad" placeholder="Edad">
+                        <select name="genero_registro" id="genero">
+                            <option value="defecto">Género</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="otro">Otro</option>
+                        </select>
+
+                        <input type="password" name="contraseña_registro" id="contraseña" placeholder="Contraseña">
+                        <p class="textoregistro">Escriba la contraseña para guardar los cambios</p>
+                    </div>
+                    <div class="derecha">
+
+                        <div id="contenedor" ondragover="manejarArrastre(event)" ondrop="soltarImagen(event)"
+                            onclick="cargarImagenPorClic()">
+                            <span id="texto">Arrastra una imagen aquí o haz clic para seleccionar</span>
+                            <input type="file" id="inputImagen" accept="image/*" style="display: none;">
+                            <img id="imagen" src="" alt="Imagen">
+                        </div>
+                        <button type="submit" id="registrarse">Guardar Cambios</button>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright Josthin Baque 2023</p>
+    </footer>
+    <script src="../login/scriptRegistro.js"></script>
+</body>
+
+</html>
